@@ -1,0 +1,46 @@
+// Ресурсы Mafanya.exe. Сборка (MinGW, из папки с vira.cpp):
+//   windres resources.rc -o resources.res
+//   g++ -std=c++17 -mwindows -municode -static vira.cpp resources.res -o Mafanya.exe -lgdiplus -lgdi32 -luser32 -lole32 -ldwmapi
+// Пути ниже относительны папке сборки. Если файлы лежат иначе — поправь пути.
+
+#include <windows.h>
+
+// Звук печати
+100      RCDATA "clicks-per2.wav"
+
+// Иконка и шрифт
+3000     RCDATA "CircleLogo256.png"
+3001     RCDATA "font.ttf"
+
+// Спрайты диалогов (id совпадают с таблицей g_resMap в vira.cpp)
+2000     RCDATA "Assets/Sprites/Mafanya/HELLO.png"
+2001     RCDATA "Assets/Sprites/Mafanya/amaze.png"
+2002     RCDATA "Assets/Sprites/Mafanya/backhands.png"
+2003     RCDATA "Assets/Sprites/Mafanya/backhands1.png"
+2004     RCDATA "Assets/Sprites/Mafanya/backhands3.png"
+2005     RCDATA "Assets/Sprites/Mafanya/backhands4.png"
+2006     RCDATA "Assets/Sprites/Mafanya/bra_off.png"
+2007     RCDATA "Assets/Sprites/Mafanya/default.png"
+2008     RCDATA "Assets/Sprites/Mafanya/default1.png"
+2009     RCDATA "Assets/Sprites/Mafanya/flirt.png"
+2010     RCDATA "Assets/Sprites/Mafanya/flirt_eyesclosed.png"
+2011     RCDATA "Assets/Sprites/Mafanya/handmouth.png"
+2012     RCDATA "Assets/Sprites/Mafanya/happynormal.png"
+2013     RCDATA "Assets/Sprites/Mafanya/hello1.png"
+2014     RCDATA "Assets/Sprites/Mafanya/panties_off.png"
+2015     RCDATA "Assets/Sprites/Mafanya/sad.png"
+2016     RCDATA "Assets/Sprites/Mafanya/sad1.png"
+2017     RCDATA "Assets/Sprites/Mafanya/sadnormal.png"
+2018     RCDATA "Assets/Sprites/Mafanya/shirt_off.png"
+2019     RCDATA "Assets/Sprites/Mafanya/shy.png"
+2020     RCDATA "Assets/Sprites/Mafanya/shy1.png"
+2021     RCDATA "Assets/Sprites/Mafanya/shy2.png"
+2022     RCDATA "Assets/Sprites/Mafanya/think.png"
+
+// Листы анимации, обои, подарок (грузятся по фиксированным id)
+4001     RCDATA "Assets/Sprites/Mafanya/suck1.png"
+4002     RCDATA "Assets/Sprites/Mafanya/suck2.png"
+4003     RCDATA "Assets/Sprites/Mafanya/wallpapertest.png"
+4004     RCDATA "Assets/Sprites/Mafanya/nudes.png"
+2023 		 RCDATA "Assets\\Sprites\\Mafanya\\Menu.png"
+2024 		 RCDATA "Assets\\Sprites\\Mafanya\\Menu1.png"
